@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-mono: 'Fira Code', monospace;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.45);
+}
+
+/* Monaco decoration highlight styles */
+.monaco-bug-line-highlight-critical {
+  background: rgba(239, 68, 68, 0.2) !important;
+  border-left: 3px solid #ef4444 !important;
+}
+
+.monaco-bug-line-highlight-major {
+  background: rgba(245, 158, 11, 0.18) !important;
+  border-left: 3px solid #f59e0b !important;
+}
+
+.monaco-bug-line-highlight-minor {
+  background: rgba(59, 130, 246, 0.15) !important;
+  border-left: 3px solid #3b82f6 !important;
+}
+
+.monaco-bug-glyph-critical {
+  background: #ef4444;
+  border-radius: 50%;
+  margin-left: 4px;
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.monaco-bug-glyph-major {
+  background: #f59e0b;
+  border-radius: 50%;
+  margin-left: 4px;
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.monaco-bug-glyph-minor {
+  background: #3b82f6;
+  border-radius: 50%;
+  margin-left: 4px;
+  width: 8px !important;
+  height: 8px !important;
+}

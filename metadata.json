@@ -1,0 +1,7 @@
+{
+  "name": "Code Debugging Assistant",
+  "description": "AI-powered code debugger that detects bugs, explains root causes in plain language, and generates corrected code with side-by-side diffs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
